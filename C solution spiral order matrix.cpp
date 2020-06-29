@@ -8,11 +8,11 @@
 int* spiralOrder(const int** A, int n11, int n12, int *len1) {
 
       int *res = (int *)malloc(sizeof(int) * (n11 * n12));
-      int T = 0;
-      int B = n11 - 1;
-      int L = 0;
-      int R = n12 - 1;
-      int dir = 0;
+      int T = 0; //Top
+      int B = n11 - 1; //Bottom
+      int L = 0; // Left
+      int R = n12 - 1; // Right
+      int dir = 0; //direction
       int i = 0;
       int k = 0;
       *len1 = n11 * n12;
